@@ -1,0 +1,6 @@
+1) Put both computers hostnames and ip addresses in each others etc/hosts file. 
+    get the wifi ip address with ifconfig (might have to download iftools first)
+    get the hostname with $hostname
+2) Launch the roscore on the host machine (and whatever else)
+3) Set the remote master URI to the wifi ip address of the host machine.
+    $export ROS_MASTER_URI=http://{the wifi ip address}:11311
